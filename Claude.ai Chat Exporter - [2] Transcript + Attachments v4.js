@@ -356,7 +356,7 @@
 
       if (t.role === "user") {
         md.push(
-          `## 👤 User${t.uiTimestamp ? " — " + t.uiTimestamp : t.timestamp ? " — " + t.timestamp : ""}\n`,
+          `## 👤 User${t.timestamp ? " — " + t.timestamp : t.uiTimestamp ? " — " + t.uiTimestamp : ""}\n`,
         );
 
         if (t.files.length > 0) {
